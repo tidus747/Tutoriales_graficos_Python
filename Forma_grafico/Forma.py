@@ -24,7 +24,7 @@ for j in range(len(x_2)):
 
 # Creamos el gráfico
 plt.ion()
-plt.plot(x,y,'b',x_2,y_2,'y')
+plt.plot(x,y,'bo',x_2,y_2,'y-')
 
 #Colocamos las etiquetas de los ejes
 plt.xlabel("Coordenada X")

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-Iván Rodríguez - 2017
+Iván Rodríguez - 2018
 Código generado para el canal de YouTube Piensa 3D
 '''
 
@@ -23,15 +23,25 @@ for j in range(len(x_2)):
     y_2[j] = math.cos(x_2[j])
 
 # Creamos el gráfico
-plt.ion()
-plt.plot(x,y,'--',x_2,y_2,'*')
-
-#Colocamos las etiquetas de los ejes
+plt.subplot(221)
+plt.plot(x,y,'--')
 plt.xlabel("Coordenada X")
 plt.ylabel("Coordenada Y")
+plt.title("Representacion de funciones 1")
+plt.subplot(222)
+plt.plot(x_2,y_2,'*')
+plt.xlabel("Coordenada X")
+plt.ylabel("Coordenada Y")
+plt.title("Representacion de funciones 2")
+plt.subplot(223)
+plt.plot(x,y,'o')
+plt.xlabel("Coordenada X")
+plt.ylabel("Coordenada Y")
+plt.title("Representacion de funciones 3 ")
+plt.subplot(224)
+plt.plot(x_2,y_2,'-')
+plt.xlabel("Coordenada X")
+plt.ylabel("Coordenada Y")
+plt.title("Representacion de funciones 4")
 
-#Colocamos la leyenda
-plt.legend(['Seno','Coseno'])
-
-#Colocamos el título del gráfico
-plt.title("Representacion de funciones")
+plt.show()
